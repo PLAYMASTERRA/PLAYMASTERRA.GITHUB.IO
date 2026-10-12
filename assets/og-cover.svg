@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="PLAYMASTER RA — Gaming. Stories. Adventures.">
+  <rect width="1200" height="630" fill="#FAF8F5"/>
+  <g stroke="#E5E0D8" stroke-width="1">
+    <line x1="80" y1="0" x2="80" y2="630"/>
+    <line x1="1120" y1="0" x2="1120" y2="630"/>
+    <line x1="0" y1="90" x2="1200" y2="90"/>
+    <line x1="0" y1="540" x2="1200" y2="540"/>
+  </g>
+  <rect x="130" y="135" width="190" height="36" rx="18" fill="#111215"/>
+  <circle cx="152" cy="153" r="5" fill="#C83E2B"/>
+  <text x="168" y="158" font-family="sans-serif" font-size="13" font-weight="700" fill="#FAF8F5" letter-spacing="2">PLAYMASTER RA</text>
+  <text x="130" y="275" font-family="sans-serif" font-size="78" font-weight="800" fill="#111215" letter-spacing="-2">Gaming.</text>
+  <text x="455" y="275" font-family="Georgia, serif" font-size="84" font-style="italic" fill="#C83E2B">Stories.</text>
+  <text x="130" y="370" font-family="sans-serif" font-size="78" font-weight="800" fill="#111215" letter-spacing="-2">Adventures.</text>
+  <text x="130" y="445" font-family="sans-serif" font-size="24" fill="#4A4D55">Cinematic gameplay, BUSSID journeys, Car Parking Multiplayer builds &amp; storytelling.</text>
+  <text x="130" y="510" font-family="monospace" font-size="16" fill="#787C87" letter-spacing="1.5">YOUTUBE.COM/@PLAYMASTERRA</text>
+</svg>

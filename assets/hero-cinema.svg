@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 720" width="960" height="720" role="img" aria-label="PLAYMASTER RA Cinematic Gaming Editorial Composition">
+  <defs>
+    <linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#14161B"/>
+      <stop offset="58%" stop-color="#1F242D"/>
+      <stop offset="100%" stop-color="#101216"/>
+    </linearGradient>
+    <linearGradient id="sunGlow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#C83E2B" stop-opacity="0.45"/>
+      <stop offset="60%" stop-color="#E07A5F" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#14161B" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="roadSurface" x1="0.5" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="#252932"/>
+      <stop offset="100%" stop-color="#0E1014"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Outer Editorial Frame -->
+  <rect width="960" height="720" rx="18" fill="url(#skyGrad)"/>
+  <circle cx="700" cy="220" r="260" fill="url(#sunGlow)"/>
+
+  <!-- Architectural Viewfinder Grid Lines -->
+  <g stroke="#FAF8F5" stroke-opacity="0.07" stroke-width="1">
+    <line x1="0" y1="180" x2="960" y2="180"/>
+    <line x1="0" y1="360" x2="960" y2="360"/>
+    <line x1="0" y1="540" x2="960" y2="540"/>
+    <line x1="240" y1="0" x2="240" y2="720"/>
+    <line x1="480" y1="0" x2="480" y2="720"/>
+    <line x1="720" y1="0" x2="720" y2="720"/>
+  </g>
+
+  <!-- Distant Mountain Silhouettes (BUSSID / Adventure Horizon) -->
+  <path d="M0 410 L140 290 L270 365 L430 235 L590 350 L740 250 L890 345 L960 310 L960 440 L0 440 Z" fill="#181C24"/>
+  <path d="M0 435 L190 340 L350 395 L530 295 L710 385 L860 330 L960 375 L960 460 L0 460 Z" fill="#12151B"/>
+
+  <!-- Perspective Highway -->
+  <polygon points="430,420 530,420 880,720 80,720" fill="url(#roadSurface)"/>
+  <line x1="430" y1="420" x2="80" y2="720" stroke="#FAF8F5" stroke-opacity="0.22" stroke-width="2"/>
+  <line x1="530" y1="420" x2="880" y2="720" stroke="#FAF8F5" stroke-opacity="0.22" stroke-width="2"/>
+  <line x1="480" y1="420" x2="480" y2="720" stroke="#C83E2B" stroke-opacity="0.85" stroke-width="4" stroke-dasharray="26 22"/>
+
+  <!-- Stylized Touring Coach / Performance Vehicle Silhouette on Highway -->
+  <g transform="translate(365, 370)">
+    <!-- Headlight Beams -->
+    <polygon points="35,140 -65,260 85,260" fill="#FAF8F5" fill-opacity="0.08"/>
+    <polygon points="195,140 145,260 295,260" fill="#FAF8F5" fill-opacity="0.08"/>
+    <!-- Coach Body -->
+    <rect x="25" y="18" width="180" height="122" rx="16" fill="#FAF8F5"/>
+    <rect x="35" y="30" width="160" height="58" rx="8" fill="#14161B"/>
+    <!-- Destination LED Board -->
+    <rect x="58" y="36" width="114" height="16" rx="4" fill="#1F242D"/>
+    <text x="115" y="48" text-anchor="middle" font-family="monospace" font-size="10" font-weight="700" fill="#C83E2B" letter-spacing="1.5">PLAYMASTER RA</text>
+    <!-- Front Grille & Headlights -->
+    <rect x="38" y="102" width="32" height="14" rx="4" fill="#C83E2B"/>
+    <rect x="160" y="102" width="32" height="14" rx="4" fill="#C83E2B"/>
+    <rect x="80" y="104" width="70" height="12" rx="3" fill="#14161B"/>
+    <!-- Side Mirrors -->
+    <path d="M25 42 L8 52 L8 72 L25 65 Z" fill="#C83E2B"/>
+    <path d="M205 42 L222 52 L222 72 L205 65 Z" fill="#C83E2B"/>
+    <!-- Wheels -->
+    <rect x="36" y="136" width="30" height="16" rx="4" fill="#0B0C0E"/>
+    <rect x="164" y="136" width="30" height="16" rx="4" fill="#0B0C0E"/>
+  </g>
+
+  <!-- Cinema Viewfinder Corner Brackets -->
+  <g stroke="#FAF8F5" stroke-opacity="0.6" stroke-width="2.5" fill="none">
+    <path d="M44 76 V44 H76"/>
+    <path d="M884 44 H916 V76"/>
+    <path d="M44 644 V676 H76"/>
+    <path d="M884 676 H916 V644"/>
+  </g>
+
+  <!-- Editorial Telemetry HUD Overlay -->
+  <rect x="64" y="62" width="174" height="34" rx="17" fill="#FAF8F5" fill-opacity="0.1"/>
+  <circle cx="84" cy="79" r="5" fill="#C83E2B"/>
+  <text x="98" y="84" font-family="monospace" font-size="12" font-weight="700" fill="#FAF8F5" letter-spacing="1.5">REC · 4K 60FPS</text>
+
+  <text x="892" y="84" text-anchor="end" font-family="monospace" font-size="12" fill="#FAF8F5" fill-opacity="0.7" letter-spacing="1.5">CH // @PLAYMASTERRA</text>
+
+  <!-- Bottom Editorial Caption Strip inside Canvas -->
+  <rect x="64" y="592" width="832" height="68" rx="12" fill="#111215" fill-opacity="0.86" stroke="#FAF8F5" stroke-opacity="0.14"/>
+  <text x="90" y="622" font-family="sans-serif" font-size="13" font-weight="700" fill="#C83E2B" letter-spacing="2">CINEMATIC VIRTUAL WORLDS</text>
+  <text x="90" y="644" font-family="Georgia, serif" font-size="18" font-style="italic" fill="#FAF8F5">BUSSID Journeys · Car Parking Multiplayer · Story-Driven Challenges</text>
+  <text x="870" y="636" text-anchor="end" font-family="monospace" font-size="13" fill="#FAF8F5" fill-opacity="0.6">16:9 MASTER</text>
+</svg>

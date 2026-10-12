@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PLAYMASTER RA — Gaming. Stories. Adventures.</title>
+  <meta name="description" content="Official creator website of PLAYMASTER RA. Cinematic gaming, Bus Simulator Indonesia (BUSSID) journeys, Car Parking Multiplayer (CPM) builds, gaming challenges, and virtual storytelling.">
+  <meta name="theme-color" content="#FAF8F5">
+
+  <!-- Open Graph Metadata (Section 15) -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="PLAYMASTER RA">
+  <meta property="og:title" content="PLAYMASTER RA — Gaming. Stories. Adventures.">
+  <meta property="og:description" content="Welcome to PLAYMASTER RA — cinematic gaming, unforgettable challenges, and stories from the virtual world.">
+  <meta property="og:image" content="assets/og-cover.svg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="PLAYMASTER RA — Official Creator Website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="PLAYMASTER RA — Gaming. Stories. Adventures.">
+  <meta name="twitter:description" content="Cinematic gaming, BUSSID journeys, Car Parking Multiplayer builds, and stories from the virtual world.">
+  <meta name="twitter:image" content="assets/og-cover.svg">
+
+  <!-- Original PLAYMASTER RA Branding Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+  <!-- Google Fonts (Gracefully degrades to system serif/sans in offline sandboxes) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Clean Schema.org Structured Data (Only factual supplied brand info) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "PLAYMASTER RA",
+    "description": "Welcome to PLAYMASTER RA — cinematic gaming, unforgettable challenges, and stories from the virtual world.",
+    "sameAs": [
+      "https://youtube.com/@playmasterra"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- Subtle architectural vertical grid rules (Editorial aesthetic) -->
+  <div class="editorial-grid-lines" aria-hidden="true">
+    <div class="grid-line"></div>
+    <div class="grid-line"></div>
+    <div class="grid-line"></div>
+  </div>
+
+  <!-- Optional Top Announcement Banner (Editable & Toggleable in Admin) -->
+  <div id="announcement-banner" class="top-banner" hidden>
+    <div class="container top-banner-inner">
+      <div class="top-banner-content">
+        <span class="banner-dot" aria-hidden="true"></span>
+        <p id="banner-text" class="banner-text">Welcome to the official PLAYMASTER RA website — explore gaming categories or subscribe on YouTube.</p>
+      </div>
+      <a id="banner-link" class="banner-cta" href="https://youtube.com/@playmasterra" target="_blank" rel="noopener noreferrer">
+        Visit Channel &rarr;
+      </a>
+    </div>
+  </div>
+
+  <!-- Admin Draft Preview Notice Bar (Only shown when opened with ?preview=draft from Admin Panel) -->
+  <div id="draft-preview-bar" class="draft-preview-bar" hidden>
+    <div class="container draft-preview-inner">
+      <span><strong>ADMIN DRAFT PREVIEW MODE</strong> — You are viewing unpublished homepage draft changes. Public visitors only see published content.</span>
+      <div class="draft-preview-actions">
+        <a href="admin/" class="btn btn-xs btn-outline-light">Return to Admin Studio</a>
+        <a href="index.html" class="btn btn-xs btn-light">View Live Public Version</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= A. NAVIGATION BAR ================= -->
+  <header class="site-header" id="top">
+    <div class="container nav-bar">
+      <a href="#top" class="brand-wordmark" aria-label="PLAYMASTER RA Home">
+        <span class="brand-emblem" aria-hidden="true">
+          <span class="brand-play-icon"></span>
+        </span>
+        <span class="brand-text">PLAYMASTER <em class="brand-ra">RA</em></span>
+      </a>
+
+      <nav class="primary-nav" aria-label="Primary Navigation">
+        <a href="#top" class="nav-link">Home</a>
+        <a href="#videos" class="nav-link">Videos</a>
+        <a href="#categories" class="nav-link">Gaming Categories</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a
+          href="https://youtube.com/@playmasterra"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn-primary btn-subscribe-nav"
+          aria-label="Subscribe to PLAYMASTER RA on YouTube"
+        >
+          <span class="yt-dot" aria-hidden="true"></span>
+          <span>Subscribe</span>
+          <span aria-hidden="true">&rarr;</span>
+        </a>
+
+        <button
+          type="button"
+          class="mobile-menu-toggle"
+          id="mobile-menu-btn"
+          aria-label="Open navigation menu"
+          aria-controls="mobile-drawer"
+          aria-expanded="false"
+        >
+          <span class="burger-bar"></span>
+          <span class="burger-bar"></span>
+          <span class="burger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div id="drawer-scrim" class="drawer-scrim" hidden></div>
+  <aside id="mobile-drawer" class="mobile-drawer" aria-label="Mobile Navigation" aria-hidden="true">
+    <div class="drawer-header">
+      <span class="brand-wordmark">
+        <span class="brand-emblem" aria-hidden="true"><span class="brand-play-icon"></span></span>
+        <span class="brand-text">PLAYMASTER <em class="brand-ra">RA</em></span>
+      </span>
+      <button type="button" id="drawer-close-btn" class="drawer-close" aria-label="Close navigation menu">&times;</button>
+    </div>
+
+    <div class="drawer-body">
+      <div class="drawer-section">
+        <p class="drawer-label">Navigation</p>
+        <nav class="drawer-links" aria-label="Mobile Sections">
+          <a href="#top" class="drawer-link">Home</a>
+          <a href="#featured" class="drawer-link">Featured Spotlight</a>
+          <a href="#videos" class="drawer-link">Latest Videos</a>
+          <a href="#categories" class="drawer-link">Gaming Categories</a>
+          <a href="#about" class="drawer-link">About PLAYMASTER RA</a>
+          <a href="#announcements" class="drawer-link">Updates &amp; Dispatch</a>
+          <a href="#contact" class="drawer-link">Contact &amp; Links</a>
+        </nav>
+      </div>
+
+      <div class="drawer-section">
+        <p class="drawer-label">Official Channel</p>
+        <a
+          href="https://youtube.com/@playmasterra"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn-primary btn-block"
+        >
+          <span>Subscribe on YouTube (@playmasterra) &rarr;</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="drawer-footer">
+      <a href="admin/" class="drawer-admin-link">Creator Admin Studio &rarr;</a>
+    </div>
+  </aside>
+
+  <!-- ================= MAIN CONTENT ================= -->
+  <main id="main-content">
+
+    <!-- ================= B. HERO SECTION ================= -->
+    <section id="hero" class="hero-section">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <div class="eyebrow-tag">
+              <span class="rec-indicator" aria-hidden="true"></span>
+              <span id="hero-badge">OFFICIAL CREATOR ARCHIVE &amp; INDEX</span>
+            </div>
+
+            <h1 id="hero-heading" class="hero-title">
+              Gaming. <em class="serif-accent">Stories.</em> Adventures.
+            </h1>
+
+            <p id="hero-subtitle" class="hero-subtitle">
+              Welcome to PLAYMASTER RA — cinematic gaming, unforgettable challenges, and stories from the virtual world.
+            </p>
+
+            <div class="hero-cta-group">
+              <a id="hero-primary-btn" href="#videos" class="btn btn-primary btn-lg">
+                <span>Watch Videos</span>
+                <span aria-hidden="true">&rarr;</span>
+              </a>
+              <a
+                id="hero-secondary-btn"
+                href="https://youtube.com/@playmasterra"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-outline btn-lg"
+              >
+                <span>Subscribe on YouTube</span>
+                <span aria-hidden="true">&#8599;</span>
+              </a>
+            </div>
+
+            <div class="hero-meta-row" aria-label="Channel Focus">
+              <div class="hero-meta-item">
+                <span class="meta-kicker">CHANNEL</span>
+                <a href="https://youtube.com/@playmasterra" target="_blank" rel="noopener noreferrer" class="meta-value link-underline">@playmasterra</a>
+              </div>
+              <div class="hero-meta-divider" aria-hidden="true"></div>
+              <div class="hero-meta-item">
+                <span class="meta-kicker">CORE UNIVERSES</span>
+                <span class="meta-value">BUSSID &middot; CPM &middot; Challenges &middot; Stories</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual-col">
+            <div class="hero-frame">
+              <img
+                id="hero-image"
+                src="assets/hero-cinema.svg"
+                alt="PLAYMASTER RA cinematic highway and virtual gaming worlds illustration"
+                width="960"
+                height="720"
+                class="hero-artwork"
+                fetchpriority="high"
+              >
+              <span class="corner-bracket tl" aria-hidden="true"></span>
+              <span class="corner-bracket br" aria-hidden="true"></span>
+            </div>
+            <div class="hero-floating-caption">
+              <span class="caption-index">PLAYMASTER RA</span>
+              <p class="caption-quote">Cinematic gameplay &amp; story-driven virtual journeys.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Editorial Content Focus Ribbon (From Section 2 Main Content List) -->
+      <div class="focus-ribbon" aria-label="Content Focus Areas">
+        <div class="container focus-ribbon-inner">
+          <span class="ribbon-label">CONTENT FOCUS</span>
+          <ul class="ribbon-list">
+            <li>Bus Simulator Indonesia (BUSSID)</li>
+            <li>Car Parking Multiplayer (CPM)</li>
+            <li>Gaming Challenges</li>
+            <li>Gaming Vlogs &amp; Storytelling</li>
+            <li>Cinematic Gameplay</li>
+            <li>Gaming Experiments &amp; Adventures</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Dynamic Reorderable Sections Container (Controlled via Admin Homepage Editor) -->
+    <div id="dynamic-sections-root">
+
+      <!-- ================= C. FEATURED VIDEO SECTION ================= -->
+      <section id="featured" class="editorial-section" data-section-key="featured">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-index-row">
+              <span class="section-num">01</span>
+              <span class="section-rule" aria-hidden="true"></span>
+              <span class="section-kicker">CURATED SHOWCASE</span>
+            </div>
+            <div class="section-heading-row">
+              <div>
+                <h2 id="featured-heading" class="section-title">Featured Spotlight</h2>
+                <p id="featured-subheading" class="section-subtitle">
+                  Curated flagship episodes, high-stakes gaming challenges, and story-driven virtual journeys selected by PLAYMASTER RA.
+                </p>
+              </div>
+              <a
+                href="https://youtube.com/@playmasterra"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="section-action-link"
+              >
+                <span>Open YouTube Channel</span>
+                <span aria-hidden="true">&#8599;</span>
+              </a>
+            </div>
+          </div>
+
+          <div id="featured-videos-container" class="featured-grid" aria-live="polite">
+            <!-- Populated dynamically by script.js -->
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= D. LATEST VIDEOS SECTION ================= -->
+      <section id="videos" class="editorial-section section-alt" data-section-key="latest">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-index-row">
+              <span class="section-num">02</span>
+              <span class="section-rule" aria-hidden="true"></span>
+              <span class="section-kicker">PUBLISHED ARCHIVE</span>
+            </div>
+            <div class="section-heading-row">
+              <div>
+                <h2 id="latest-heading" class="section-title">The Video Index</h2>
+                <p id="latest-subheading" class="section-subtitle">
+                  Every published episode organized by category and release order. Managed directly through the PLAYMASTER RA Studio.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Filter, Search & Sort Controls -->
+          <div class="archive-toolbar" role="region" aria-label="Filter and sort videos">
+            <div id="video-category-pills" class="filter-pills" role="tablist" aria-label="Filter videos by category">
+              <button type="button" class="filter-pill active" data-category="all" role="tab" aria-selected="true">
+                All Videos
+              </button>
+            </div>
+
+            <div class="archive-controls">
+              <div class="search-input-wrap">
+                <label for="public-video-search" class="sr-only">Search videos</label>
+                <input
+                  type="search"
+                  id="public-video-search"
+                  class="archive-search-input"
+                  placeholder="Search title or tag..."
+                  autocomplete="off"
+                >
+              </div>
+
+              <div class="sort-select-wrap">
+                <label for="public-video-sort" class="sr-only">Sort videos</label>
+                <select id="public-video-sort" class="archive-sort-select">
+                  <option value="order">Curated Order</option>
+                  <option value="newest">Newest First</option>
+                  <option value="oldest">Oldest First</option>
+                  <option value="title">Title (A–Z)</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <!-- Latest Videos Responsive Grid -->
+          <div id="latest-videos-container" class="videos-grid" aria-live="polite">
+            <!-- Populated dynamically by script.js -->
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= E. GAMING CATEGORIES SECTION ================= -->
+      <section id="categories" class="editorial-section" data-section-key="categories">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-index-row">
+              <span class="section-num">03</span>
+              <span class="section-rule" aria-hidden="true"></span>
+              <span class="section-kicker">GAMING UNIVERSES &amp; SERIES</span>
+            </div>
+            <div class="section-heading-row">
+              <div>
+                <h2 id="categories-heading" class="section-title">Four Worlds We Explore</h2>
+                <p id="categories-subheading" class="section-subtitle">
+                  From highway passenger expeditions in BUSSID to precision builds in Car Parking Multiplayer and narrative experiments.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div id="categories-container" class="categories-grid" aria-live="polite">
+            <!-- Populated dynamically by script.js -->
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= F. ABOUT PLAYMASTER RA ================= -->
+      <section id="about" class="editorial-section section-alt" data-section-key="about">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-index-row">
+              <span class="section-num">04</span>
+              <span class="section-rule" aria-hidden="true"></span>
+              <span class="section-kicker">CREATOR ETHOS &amp; DIRECTION</span>
+            </div>
+          </div>
+
+          <div class="about-editorial-layout">
+            <div class="about-main-col">
+              <h2 id="about-heading" class="section-title">About PLAYMASTER RA</h2>
+              <p id="about-lead" class="about-lead-copy">
+                An ambitious, story-driven gaming channel dedicated to turning virtual gameplay into memorable cinema.
+              </p>
+              <div id="about-body" class="about-body-copy">
+                <p>
+                  PLAYMASTER RA approaches gaming not merely as screen recording, but as storytelling. Whether navigating cross-country routes in Bus Simulator Indonesia (BUSSID), engineering detailed builds in Car Parking Multiplayer (CPM), or designing high-stakes gaming challenges, every video is crafted with pacing, atmosphere, and narrative intention.
+                </p>
+                <p>
+                  This official website serves as the central archive for featured episodes, curated series categories, and creator announcements.
+                </p>
+              </div>
+
+              <div class="about-brand-card">
+                <div class="about-brand-badge">OFFICIAL YOUTUBE CHANNEL</div>
+                <div class="about-brand-row">
+                  <div>
+                    <h3 class="about-brand-name">PLAYMASTER RA</h3>
+                    <p class="about-brand-url">youtube.com/@playmasterra</p>
+                  </div>
+                  <a
+                    href="https://youtube.com/@playmasterra"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-primary"
+                  >
+                    <span>Visit YouTube Channel &rarr;</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="about-pillars-col">
+              <div class="pillars-label">CREATIVE PRINCIPLES</div>
+              <div id="about-pillars-grid" class="pillars-grid">
+                <!-- Populated dynamically from homepage settings -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= H. UPDATES AND ANNOUNCEMENTS ================= -->
+      <section id="announcements" class="editorial-section" data-section-key="announcements">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-index-row">
+              <span class="section-num">05</span>
+              <span class="section-rule" aria-hidden="true"></span>
+              <span class="section-kicker">SERIES NOTES &amp; NEWS</span>
+            </div>
+            <div class="section-heading-row">
+              <div>
+                <h2 id="announcements-heading" class="section-title">Creator Dispatch &amp; Updates</h2>
+                <p id="announcements-subheading" class="section-subtitle">
+                  Upcoming series notes, challenge schedules, and official updates from PLAYMASTER RA.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div id="announcements-container" class="announcements-list" aria-live="polite">
+            <!-- Populated dynamically by script.js -->
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= G. CHANNEL SUBSCRIPTION SECTION ================= -->
+      <section id="subscribe" class="editorial-section section-subscribe" data-section-key="subscription">
+        <div class="container">
+          <div class="subscribe-banner-card">
+            <div class="subscribe-card-grid">
+              <div class="subscribe-copy-col">
+                <div class="subscribe-eyebrow">
+                  <span class="yt-dot" aria-hidden="true"></span>
+                  <span>YOUTUBE // @PLAYMASTERRA</span>
+                </div>
+                <h2 id="subscription-heading" class="subscribe-title">
+                  Join the Journey on YouTube
+                </h2>
+                <p id="subscription-text" class="subscribe-description">
+                  Subscribe to PLAYMASTER RA on YouTube for new BUSSID expeditions, Car Parking Multiplayer builds, high-stakes challenges, and cinematic gaming stories.
+                </p>
+              </div>
+              <div class="subscribe-cta-col">
+                <a
+                  id="subscription-btn"
+                  href="https://youtube.com/@playmasterra"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-accent btn-xl"
+                >
+                  <span>Subscribe to @playmasterra</span>
+                  <span aria-hidden="true">&#8599;</span>
+                </a>
+                <p class="subscribe-note">Official YouTube channel &middot; Free to subscribe</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= I. CONTACT AND SOCIAL LINKS ================= -->
+      <section id="contact" class="editorial-section" data-section-key="contact">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-index-row">
+              <span class="section-num">06</span>
+              <span class="section-rule" aria-hidden="true"></span>
+              <span class="section-kicker">OFFICIAL DIRECTORY</span>
+            </div>
+            <div class="section-heading-row">
+              <div>
+                <h2 id="contact-heading" class="section-title">Connect &amp; Channels</h2>
+                <p id="contact-text" class="section-subtitle">
+                  Follow official PLAYMASTER RA updates and verified links below. Unconfigured social links remain hidden automatically.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div id="social-links-container" class="social-directory-grid" aria-live="polite">
+            <!-- Populated dynamically by script.js (hides any unconfigured links) -->
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- ================= J. FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand-col">
+          <a href="#top" class="brand-wordmark footer-wordmark">
+            <span class="brand-emblem" aria-hidden="true"><span class="brand-play-icon"></span></span>
+            <span class="brand-text">PLAYMASTER <em class="brand-ra">RA</em></span>
+          </a>
+          <p id="footer-description" class="footer-bio">
+            The official creator website and video index of PLAYMASTER RA. Crafted for cinematic gameplay, virtual journeys, and gaming storytelling.
+          </p>
+        </div>
+
+        <div class="footer-links-col">
+          <h3 class="footer-col-title">Navigation</h3>
+          <ul class="footer-link-list">
+            <li><a href="#top">Home</a></li>
+            <li><a href="#featured">Featured Videos</a></li>
+            <li><a href="#videos">Latest Videos</a></li>
+            <li><a href="#categories">Gaming Categories</a></li>
+            <li><a href="#about">About PLAYMASTER RA</a></li>
+            <li><a href="#announcements">Announcements</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col">
+          <h3 class="footer-col-title">Gaming Categories</h3>
+          <ul id="footer-categories-list" class="footer-link-list">
+            <li><a href="#categories">BUSSID</a></li>
+            <li><a href="#categories">Car Parking Multiplayer</a></li>
+            <li><a href="#categories">Gaming Challenges</a></li>
+            <li><a href="#categories">Gaming Stories</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col">
+          <h3 class="footer-col-title">Official Links</h3>
+          <ul id="footer-social-list" class="footer-link-list">
+            <li>
+              <a href="https://youtube.com/@playmasterra" target="_blank" rel="noopener noreferrer">
+                YouTube (@playmasterra) &#8599;
+              </a>
+            </li>
+          </ul>
+          <div class="footer-studio-box">
+            <a href="admin/" class="footer-admin-btn">
+              <span>Creator Admin Panel</span>
+              <span aria-hidden="true">&rarr;</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <p class="copyright-line">
+          &copy; <span id="current-year">2026</span> <strong>PLAYMASTER RA</strong>. All rights reserved.
+        </p>
+        <p class="footer-meta-note">
+          Official Creator Website &middot; <a href="https://youtube.com/@playmasterra" target="_blank" rel="noopener noreferrer">youtube.com/@playmasterra</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Video Theatre / Quick Watch Modal -->
+  <div id="video-modal" class="video-modal" role="dialog" aria-modal="true" aria-labelledby="video-modal-title" hidden>
+    <div class="video-modal-backdrop" id="video-modal-backdrop"></div>
+    <div class="video-modal-dialog">
+      <div class="video-modal-header">
+        <div>
+          <span id="video-modal-category" class="modal-kicker">CATEGORY</span>
+          <h3 id="video-modal-title" class="modal-title">Video Title</h3>
+        </div>
+        <button type="button" id="video-modal-close" class="modal-close-btn" aria-label="Close video player">&times;</button>
+      </div>
+      <div class="video-modal-body">
+        <div id="video-modal-embed-wrap" class="video-embed-aspect"></div>
+        <div class="video-modal-footer">
+          <p id="video-modal-desc" class="modal-desc"></p>
+          <a
+            id="video-modal-yt-link"
+            href="https://youtube.com/@playmasterra"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-primary"
+          >
+            <span>Watch directly on YouTube &#8599;</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
